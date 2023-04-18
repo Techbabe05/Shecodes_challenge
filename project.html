@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Black Beauty Studio</h1>
+
+    <img src="b_img.jpg" alt="face icon" width="300" height="200" />
+
+    <img
+      src="Nails_img.jpg"
+      alt="Image 2"
+      width="300"
+      height="200"
+      class="nails-image"
+    />
+    <img
+      src="hair_img.avif"
+      alt="Image 3"
+      width="300"
+      height="200"
+      class="hair-image"
+    />
+    <p>
+      Our Beauty Salon offers a variety of cosmetic treatments and cosmetic
+      services for women. We offer a variety of services including professional
+      hair cutting and styling, manicures and pedicures, makeup and makeovers.
+    </p>
+    <h2>
+      <ul>
+        <li>Hair</li>
+        <li>Nails</li>
+        <li>Waxing</li>
+        <li>Makeup and Makeovers</li>
+        <li>Massage</li>
+      </ul>
+    </h2>
+    <button class="Book_Now">Book Now</button>
+    <p class="coded-by">
+      Coded by
+      <a
+        href="https://www.shecodes.io/graduates/75197-betty-onomiwo"
+        target="_blank"
+        >Betty Onomiwo 😊</a
+      >
+    </p>
+    <script>
+      function Book() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        alert(
+          "Thank you for booking with us" +
+            name +
+            "! We look forward to seeing you soon. 😊"
+        );
+      }
+
+      let bookNow = document.querySelector(".Book_Now");
+      bookNow.addEventListener("click", Book);
+    </script>
+  </body>
+</html>
